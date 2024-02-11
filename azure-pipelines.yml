@@ -12,6 +12,5 @@ pool:
 steps:
 - script: |
     chmod +x app1.sh
-    cat app.sh
     ./app1.sh
   displayName: 'Run app.sh'
