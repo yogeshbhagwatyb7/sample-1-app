@@ -1,0 +1,17 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  1test
+
+steps:
+- script: |
+    chmod +x app1.sh
+    cat app.sh
+    ./app1.sh
+  displayName: 'Run app.sh'
